@@ -1,0 +1,46 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+header {
+  border: solid;
+  height: 100vh;    
+  padding: 10px;
+  display: flex;
+  animation: hide 1s infinite;
+  align-items: center;
+  justify-content: center;
+}
+.child {
+  width: 150px;
+  height: 100px;
+  button {
+    display: flex;
+    border: none;
+    border-radius: 15px;
+    align-items: center;
+    gap: 15px;
+  }
+  img {
+    animation: height 0.9s infinite linear;
+    height: 50px;
+  }
+}
+
+@keyframes height {
+  from {
+    transform: rotate(10deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes hide {
+    from {
+      background-color: darkblue;
+    }
+    to {
+      background-color: rgb(0, 0, 0);
+    }
+  }
